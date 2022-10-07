@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid Test</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+    <form action="../forms/checkout.html">
+        <div class="container">
+            <h2 class="main_head">Covid Test</h2>
+            <hr>
+            <h3 class="sub_head">Patient Details</h3>
+            <div class="nam">
+                Name: <input type="text" name="name" placeholder="Enter patient name" />
+            </div>
+            <fieldset>
+                <legend>Gender</legend>
+                <div class="gen">
+                    Male <input type="radio" name="gender" id="m" /> Female
+                    <input type="radio" name="gender" id="f" />
+                </div>
+            </fieldset>
+            <div class="age">
+                Age:
+                <input type="number" name="age" id="age" placeholder="000">
+            </div>
+            <div class="pno">
+                Phone Number:
+                <input type="number" name="pno" id="pno" placeholder="1234567890">
+            </div>
+            <div class="mail">
+                Mail id:
+                <input type="email" name="mail" id="mail" placeholder="xyz@gmail.com">
+            </div>
+            <div class="add">
+                Address:
+                <textarea name="address" id="" cols="90" rows="10" placeholder="Enter your Address"></textarea>
+            </div>
+            <div class="pin">
+                Pin Code:
+                <input type="number" name="pincode" id="pincode" placeholder="Pin Code" />
+            </div>
+            <hr>
+            <!-- <h3 class="sub_head">Payment</h3> -->
+            
+            <br>
+            <div class="submit">
+                <input type="submit" value="BookNow">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

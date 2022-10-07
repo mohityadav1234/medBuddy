@@ -1,0 +1,345 @@
+*{
+    margin: 0px ;
+    padding: 0px;
+}
+
+.home{
+    height: 80vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 15vh;
+}
+.home::before{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(19, 18, 18);
+    background-image: url("https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    z-index: -1;
+}
+.home h1{
+    font-size: 4.4rem;
+    font-weight: bold;
+}
+.home h3{
+    font-size: 3.2rem;
+}
+
+
+.cho1{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.cho2{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    margin-top: 5vh;
+    flex-wrap: wrap;
+}
+.choHead{
+    font-size: 1.5rem;
+}
+.card{
+    width: 350px;
+    height: 250px;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#fff2607c;
+    border-radius: 20px;
+    margin: 20px;
+   
+
+}
+.card img{
+    height: 100px;
+    width: 150px;
+    margin: 20px 0px;
+}
+.card h2{
+    color: #000;
+}
+
+
+
+.car1{
+    width: 80%;
+    margin:2.5vh auto;
+}
+.c-img{
+    width: 80%;
+    height: 60vh;
+}
+.carousel-control-next, .carousel-control-prev{
+    position: relative;
+    display: none;
+
+}
+
+
+.servHead{
+    height: 10vh;
+    margin-top: 7.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.servHead1{
+    font-size: 2.5rem;
+}
+.servHead2,.servHead3{
+    font-size: 1.75rem;
+}
+
+.service{ 
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.service a{
+    text-decoration: none;
+}
+.serviceBox{
+    height: 350px;
+    width: 250px;
+    border: 2px solid black;
+    margin: 0px 25px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+   
+}
+.serviceBox:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 8px rgba(68, 68, 68, 0.6);
+
+}
+.serviceBox h1{
+    font-size: 2.1rem;
+    color: black;
+}
+.service::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+.serviceImage{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px 20px 0px 0px ;
+}
+
+
+footer{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 2px double solid transparent;
+    align-items: center;
+    flex-direction: column;
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
+    box-shadow: 3px 5px 8px 0px rgba(0, 0, 0, 0.75);
+    background-blend-mode: screen;
+    
+}
+.footlinks{
+    width: 30%;
+    height: 10vh;
+    border-bottom: 1px solid rgb(134, 133, 133);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1vh;
+    
+}
+.footlinks a{
+    text-decoration: none;
+    opacity: 0.8;
+}
+.footlinks a:hover{
+    opacity: 1;
+}
+.footIcon{
+    font-size: 35px;
+}
+
+
+/* chatbot ki css  */
+.chat_icon{
+    position: fixed;
+    right: 45px;
+    bottom: 10px;
+    /* font-size: 80px; */
+    color: rgb(255, 103, 103);
+    cursor: pointer;
+    z-index: 1000;
+}
+.chat_icon img{
+    height: 100px;
+    /* width: ; */
+}
+.chatbox{
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    width: 400px;
+    height: 75vh;
+    background-image: linear-gradient(#D5EEBB,#7FC8A9);
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+    transform: scaley(0);
+    overflow-y:scroll ;
+    scroll-behavior: auto;
+
+}
+/* .chatbox::-webkit-scrollbar {
+ display: none;
+} */
+.chatbox.active{
+    transform: scaleY(1);
+}
+
+.chatbox input {
+    height: 30px;
+    width: 90%;
+    outline: none;
+    /* text-align: center; */
+    border-radius: 10px;
+    /* box-sizing: border-box; */
+    padding: 3px;
+    text-align: left;
+    /* position: absolute; */
+    position:sticky;
+    margin-left: 20px;
+    top: 35px;
+    
+}
+.box #chatLog {
+    margin: 15px;
+    display: block;
+    /* text-align:center; */
+    z-index: -1;
+    position: absolute;
+    top:60px;
+}
+.chatbox1{
+    font-size: 22px;
+}
+
+.medForm{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 38vh;
+    visibility: hidden;
+}
+.medForm input{
+    margin-bottom: 4px;
+    width: 80%;
+}
+.medForm button{
+    width: 100px;
+    margin-bottom: 4px;
+}
+ /* yaha pe bot khataam  */
+
+
+ /* responsive css  */
+ @media(max-width:960px){
+     .home h1 {
+         font-size: 3.6rem;
+     }
+     .home h3{
+         font-size: 2.5rem;
+     }
+ } 
+ @media(max-width:690px){
+     .home h1 {
+         font-size: 2.2rem;
+     }
+     .home h3 {
+         font-size: 1.5rem;
+     }
+     .servHead2,.servHead3{
+         font-size: 1.2rem;
+
+     }
+     .footlinks{
+         width: 50%;
+
+     }
+     .footCnt{
+         font-size: 1.02rem;
+     }
+     .chat_icon img{
+         height: 70px;
+     }
+     .chat_icon{
+        bottom: 35px;
+     }
+     .text,.alert-password{
+         display: none;
+     }
+ }
+ @media(max-width:450px){
+     .home h1{
+         font-size: 1.7rem;
+     }
+     .home h3{
+         font-size: 1.1rem;
+         font-weight: bold;
+     }
+     .servHead3{
+         font-size: 0.9rem;
+     }
+     .choHead{
+         font-size: 1.3rem;
+     }
+     .car1{
+         width: 100%;
+         
+     }
+     .c-img{
+         height: 50vh;
+
+     }
+     .chatbox{
+         right: 0px;
+         width: 360px;
+     }
+     .chat_icon{
+         right: 10px;
+     }
+     .chatbox1{
+         font-size: 18px;
+     }
+     .medForm{
+         top: 41vh;
+     }
+ }
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="form.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+    <!-- <link rel="stylesheet" href="./c.css"> -->
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+<style>
+    .input-price{
+    background-color: white;
+    padding: 10px 10px;
+    border: 1px solid #acc;
+    margin-bottom: 20px;
+}
+.lead{
+    /* font-size: small; */
+    font-weight: lighter;
+    opacity: 0.6;
+}
+</style>
+<body>
+    <div class="main">
+
+    <div class="row" >
+    <div class="col-50">
+        <div class="container">
+            <form action="../forms/payment.php" method="post" style="padding:25px;">
+            <div class="row1">
+                <div class="col-25">
+                    <h3 style="text-align: center; margin: 20px 10px; font-family: lato;">Checkout Form</h3>
+                    <label for="fname"><i class="fa fa-user"></i>Full Name</label>
+                    <input type="text" id="fname" name="name" placeholder="John.m Doe">
+                    <label for="email"><i class="fa fa-envelope"></i>Email</label>
+                    <input type="text" id="email" name="email" placeholder="John@example.com">
+                    <!-- <input type="hidden" value="<?php echo 'OID'.rand(100,1000);?>" name="orderid"> -->
+                    <label for="amnt"><i class="fas fa-rupee-sign"></i>Total Amount</label>
+                    <div class="input-price" id="amnt"> &#8377;250 <span class="lead">!rest you have to pay once your test is done</span></div>
+                    <!-- <input type="text" id="amnt" value="&#8377;250"> -->
+                    <label for="city"><i class="fa fa-mobile"></i>Mobile </label>
+                    <input type="text" id="city" name="city" placeholder="Mobile Number">
+                    <label for="adr"><i class="fa fa-address-card-o"></i>Address</label>
+                    <input type="text" id="adr" name="adr" placeholder="542 W. 13th street">
+                </div>
+                <input type="submit" value="Pay Now" class="btn">
+            </div>          
+            </form>
+        </div>
+    </div>
+    
+    
+    
+    
+    </div>
+    </div>
+  <script src="./c.js"></script>
+    
+</body>
+</html>
